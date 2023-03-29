@@ -12,6 +12,7 @@ decalage = int(input("Key: "))
 
 #if in alph: alph+= pour incrémenter
 for c in mot_a_cacher:
+    index = alphabet.index(c)
     if c in alphabet:
-        index += ((26 + decalage) % 26)
-    print(alphabet[index])
+        index = ((index + decalage) % 26)
+        print(alphabet[index])
