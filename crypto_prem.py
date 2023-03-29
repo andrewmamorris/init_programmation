@@ -6,6 +6,7 @@ lettre = alphabet[index]
 #input mot et indice
 mot_a_cacher = input("Secret word: ")
 decalage = int(input("Key: "))
+output_mot = ""
 
 #opérations:
 #boucle for qui parcourt le mot
@@ -15,4 +16,5 @@ for c in mot_a_cacher:
     index = alphabet.index(c)
     if c in alphabet:
         index = ((index + decalage) % 26)
-        print(alphabet[index])
+        output_mot += alphabet[index]
+print(output_mot)
