@@ -4,4 +4,4 @@ alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 #opérations:
 #boucle for qui parcourt le mot
-#if
+#if in alph
