@@ -1,13 +1,17 @@
 #definitions variables
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 index = 0
+lettre = alphabet[index]
+
 #input mot et indice
 mot_a_cacher = input("Secret word: ")
-decalage = input("Key")
+decalage = int(input("Key: "))
 
 #opérations:
 #boucle for qui parcourt le mot
-for
+
 #if in alph: alph+= pour incrémenter
-if c in alphabet:
-    alphabet[index] += ((26 + ind) % 26)
+for c in mot_a_cacher:
+    if c in alphabet:
+        index += ((26 + decalage) % 26)
+    print(alphabet[index])
